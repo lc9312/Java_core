@@ -15,7 +15,7 @@ public class GetConstactorAndNewInstance {
         Constructor constructor = clazz.getDeclaredConstructor(String.class);
 
         // 3.设定构造对象为可到达的,无障碍的
-        constructor.setAccessible(true);
+        constructor.setAccessible(true);// 称为暴力反射!
 
         // 4.新建对象实例
         Student student = (Student) constructor.newInstance("大漂亮");
