@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
-@interface Book {
+public @interface Book {
     //写属性
     int price() default 100; //价格
     String name(); //default "三国演义";//书名

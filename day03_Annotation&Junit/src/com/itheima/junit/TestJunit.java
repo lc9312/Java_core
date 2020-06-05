@@ -1,9 +1,9 @@
-package com.itheima.annotation;
+package com.itheima.junit;
 
-import javax.annotation.Generated;
 
-public class Student {
-    private String name;
+import org.junit.Test;
+
+public class TestJunit {
 
     public void eat(){
         System.out.println("吃啊吃!");
@@ -15,17 +15,17 @@ public class Student {
         System.out.println("睡啊睡!");
     }
 
-    @Book(name = "五年高考,三年模拟",authors = {"衡水一中"},value = "123")
+    @Test
     public void learnEn(){
         System.out.println("学英语..");
     }
 
-    @Book(name = "五年高考,三年模拟",authors = {"衡水一中"},value = "123")
+    @Test
     public void learnCn(){
         System.out.println("学语文..");
     }
 
-    @Book(name = "五年高考,三年模拟",authors = {"衡水一中"},value = "123")
+    @Test
     public void learnMath(){
         System.out.println("学高数..");
     }
