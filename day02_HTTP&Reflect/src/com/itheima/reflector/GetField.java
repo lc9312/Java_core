@@ -27,6 +27,8 @@ public class GetField {
 //        Student student = (Student) clazz.getDeclaredConstructor(String.class,Integer.class).newInstance("jacklove",18);
         Student student = new Student("jacklove",18);
         field.set(student,"uzi");
+
+        field.set(Student.class,"水晶哥");
         System.out.println("世界第一ADC:"+field.get(student));
     }
 }

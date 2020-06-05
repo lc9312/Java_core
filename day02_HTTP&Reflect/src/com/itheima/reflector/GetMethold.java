@@ -33,7 +33,7 @@ public class GetMethold {
         System.out.println("-------------");
 //        method.invoke(Student.class);
 
-        // 3.方法有返回值时
+        // 3.方法有返回值时,invoke()方法返回对应方法的返回值类型.
         Method method = studentClass.getDeclaredMethod("work", Integer.class);
         method.setAccessible(true);
         Object invoke1 = method.invoke(student, 6);

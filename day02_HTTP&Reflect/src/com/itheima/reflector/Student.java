@@ -2,7 +2,7 @@ package com.itheima.reflector;
 
 public class Student {
     // 成员属性:姓名和年龄
-    private String name;
+    private static String name;
     private Integer age;
 
     // 无参构造
@@ -56,7 +56,14 @@ public class Student {
     }
 
     // learn方法
-    public void learn(){
-        System.out.println("好好学习,天天向上!");
+    private static void  learn(){
+        System.out.println(name+",好好学习,天天向上!");
+    }
+    private static void  learn(String str){
+        System.out.println(str+name+",好好学习,天天向上!");
+    }
+
+    private Integer work(Integer time){
+        return time;
     }
 }
